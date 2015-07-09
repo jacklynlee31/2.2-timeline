@@ -4,6 +4,9 @@ $fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts" !default; //
 
 @import 'fontawesome/scss/font-awesome';
 
+$lightblue: #AAD4F4;
+$darkblue: #68B3E2;
+
 /* apply a natural box layout model to all elements, but allowing components to change */
 html {
   box-sizing: border-box;
@@ -16,7 +19,7 @@ body {
 }
 .timeline {
 	list-style: none;
-    border-left: .5em solid #AAD4F4;
+    border-left: .5em solid $lightblue;
     margin-left: 20%;
 }
 
@@ -36,15 +39,15 @@ body {
 	position: absolute;
 	font-size: 2.5em;
 	left: 3.13em;
-	background: #68B3E2;
-	border:.2em solid #68B3E2;
+	background: $darkblue;
+	border:.2em solid $darkblue;
 	border-radius: 1em;
 }
 
 .icons:before {
   content: " ";
   position: absolute;
-  border: .2em solid #AAD4F4;
+  border: .2em solid $lightblue;
   border-radius: 1em;
   width: 1.55em;
   height: 1.55em;
@@ -58,7 +61,7 @@ body {
 	margin-left: 2.3em;
 }
 .time {
-	color: #68B3E2;
+	color: $darkblue;
 	font-size: 3em;
 	display: block;
 }
@@ -70,7 +73,7 @@ body {
 	color:white;
 	width: 50em;
 	height:20em;
-	background-color: #68B3E2;
+	background-color: $darkblue;
 	margin: auto;
 	padding: 1em;
 	border-radius: .5em;
