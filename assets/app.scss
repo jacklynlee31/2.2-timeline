@@ -1,0 +1,50 @@
+@import 'css-reset/reset';
+@import 'fontawesome/scss/font-awesome';
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+	font-family: sans-serif;
+}
+.timeline {
+	list-style: none;
+}
+
+.left {
+	width: 1em;
+}
+
+.date {
+	color: #68B3E2;
+	display: block;
+}
+.time {
+	padding-top: 1em;
+	color: #AEC4D1;
+	font-size: 3em;
+}
+.right {
+	color:white;
+	width: 50em;
+	height:20em;
+	background-color: #68B3E2;
+	margin: auto;
+	padding: 1em;
+	border-radius: .5em;
+}
+h1 {
+	border-bottom: .2em solid white;
+	text-align: left;
+	padding-bottom: .5em;
+	padding-top: 1em;
+}
+p {
+	text-align: left;
+	padding-top: .5em;
+}
+
