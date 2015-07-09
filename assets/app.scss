@@ -1,0 +1,96 @@
+@import 'css-reset/reset';
+
+$fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts" !default; // for referencing Bootstrap CDN font files directly
+
+@import 'fontawesome/scss/font-awesome';
+
+$lightblue: #AAD4F4;
+$darkblue: #68B3E2;
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body {
+	font-family: sans-serif;
+}
+.timeline {
+	list-style: none;
+    border-left: .5em solid $lightblue;
+    margin-left: 20%;
+}
+
+.event:nth-child(2) .right {
+    background: #3A84B7;
+}
+
+.left {
+	display: block;
+	position: absolute;
+	right: 110%;
+	top: 1em;
+}
+
+.icons {
+	color: white;
+	position: absolute;
+	font-size: 2.5em;
+	left: 3.13em;
+	background: $darkblue;
+	border:.2em solid $darkblue;
+	border-radius: 1em;
+}
+
+.icons:before {
+  content: " ";
+  position: absolute;
+  border: .2em solid $lightblue;
+  border-radius: 1em;
+  width: 1.55em;
+  height: 1.55em;
+  left: -.23em;
+  bottom: -.3em;
+}
+
+.date {
+	color: #AEC4D1;
+	padding-bottom: .5em;
+	margin-left: 2.3em;
+}
+.time {
+	color: $darkblue;
+	font-size: 3em;
+	display: block;
+}
+.event {
+	margin: 2em;
+	position: relative;
+}
+.right {
+	color:white;
+	width: 50em;
+	height:20em;
+	background-color: $darkblue;
+	margin: auto;
+	padding: 1em;
+	border-radius: .5em;
+	display: inline-block;
+}
+h1 {
+	border-bottom: .05em solid white;
+	text-align: left;
+	padding-bottom: .5em;
+	padding-top: 1em;
+	font-weight: bold;
+	font-size: 1.5em;
+	font-size: 2em;
+}
+p {
+	text-align: left;
+	line-height: 1.2em;
+	padding-top: .5em;
+	font-size: 1.05em;
+}
