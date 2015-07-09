@@ -1,4 +1,7 @@
 @import 'css-reset/reset';
+
+$fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts" !default; // for referencing Bootstrap CDN font files directly
+
 @import 'fontawesome/scss/font-awesome';
 
 /* apply a natural box layout model to all elements, but allowing components to change */
@@ -13,20 +16,52 @@ body {
 }
 .timeline {
 	list-style: none;
+    border-left: 4px solid #68B3E2;
+    margin-left: 20%;
 }
 
 .left {
-	width: 1em;
+	display: block;
+	position: absolute;
+	right: 110%;
+	top: 1em;
+}
+
+.icons {
+	color: white;
+	position: absolute;
+	font-size: 2.5em;
+	left: 3.13em;
+	background: #68B3E2;
+	border:.2em solid #68B3E2;
+	border-radius: 1em;
+}
+
+.icons:before {
+  content: " ";
+  position: absolute;
+  border: .2em solid #AAD4F4;
+  border-radius: 1em;
+  width: 1.55em;
+  height: 1.55em;
+  left: -.23em;
+  bottom: -.3em;
+}
 }
 
 .date {
-	color: #68B3E2;
-	display: block;
+	color: #AEC4D1;
+	padding-bottom: .5em;
+	margin-left: 2.3em;
 }
 .time {
-	padding-top: 1em;
-	color: #AEC4D1;
+	color: #68B3E2;
 	font-size: 3em;
+	display: block;
+}
+.event {
+	margin: 2em;
+	position: relative;
 }
 .right {
 	color:white;
@@ -36,15 +71,20 @@ body {
 	margin: auto;
 	padding: 1em;
 	border-radius: .5em;
+	display: inline-block;
 }
 h1 {
-	border-bottom: .2em solid white;
+	border-bottom: .05em solid white;
 	text-align: left;
 	padding-bottom: .5em;
 	padding-top: 1em;
+	font-weight: bold;
+	font-size: 1.5em;
+	font-size: 2em;
 }
 p {
 	text-align: left;
+	line-height: 1.2em;
 	padding-top: .5em;
+	font-size: 1.05em;
 }
-
