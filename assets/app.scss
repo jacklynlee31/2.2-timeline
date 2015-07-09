@@ -16,8 +16,12 @@ body {
 }
 .timeline {
 	list-style: none;
-    border-left: 4px solid #68B3E2;
+    border-left: .5em solid #AAD4F4;
     margin-left: 20%;
+}
+
+.event:nth-child(2) .right {
+    background: #3A84B7;
 }
 
 .left {
@@ -46,7 +50,6 @@ body {
   height: 1.55em;
   left: -.23em;
   bottom: -.3em;
-}
 }
 
 .date {
